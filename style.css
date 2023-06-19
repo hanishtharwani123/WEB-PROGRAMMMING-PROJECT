@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page {
+    display: flex;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: #232121;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+}
+
+.main {
+    width: 100%;
+}
+
+.main1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #e4e1e1;
+}
+
+.main2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.main3 {
+    width: 100%;
+    height: 100vh;
+    background-color: #e4e1e1;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.name {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.institute-name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #929292;
+}
+
+.sections {
+    display: grid;
+    grid-gap: 1.7px;
+    margin-top: 25px;
+}
+
+.sec {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    background: #2c2b2b;
+    transition: .2s ease-in-out;
+}
+
+.sec:hover {
+    background: #3a3939;
+}
+
+#icons {
+    font-size: 19px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+}
+
+.name-sec {
+    font-size: 15.3px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10.2px 20px;
+    border-radius: 0px;
+    width: 100%;
+}
+
+.line-break {
+    border: 1px solid #202020;
+}
+
+.social-icons {
+    width: 100%;
+    background: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px 6px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+#social {
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+#social:hover {
+    color: #9a9898;
+}
+
+.icon-link {
+    color: #fff;
+    font-size: 19.4px;
+    cursor: pointer;
+}
+
+.main1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person {
+    width: 400px;
+    height: 490px;
+}
+
+.para-bio {
+    width: 585px;
+    font-size: 14.5px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.6px;
+    margin-bottom: 18px;
+}
+
+.name-bio {
+    font-size: 50px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.paras {
+    margin-top: 20px;
+}
+
+.about-bio {
+    margin-left: 30px;
+}
