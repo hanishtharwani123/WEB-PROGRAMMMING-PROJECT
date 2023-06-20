@@ -19,7 +19,7 @@ body {
 .sidebar {
     width: 260px;
     height: 100vh;
-    background: #232121;
+    background: rgb(4 9 44);
     position: fixed;
     top: 0;
     left: 0;
@@ -28,24 +28,25 @@ body {
 
 .main {
     width: 100%;
+    margin-left: 260px;
 }
 
 .main1 {
     width: 100%;
     height: 100vh;
-    background-color: #e4e1e1;
+    background-color: #ebebeb;
 }
 
 .main2 {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-color: #ffffff;
 }
 
 .main3 {
     width: 100%;
     height: 100vh;
-    background-color: #e4e1e1;
+    background-color: #ebebeb;
 }
 
 .profile {
@@ -70,7 +71,7 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 300;
-    color: #929292;
+    color: rgb(191 191 191);
 }
 
 .sections {
@@ -83,12 +84,12 @@ body {
     width: 100%;
     display: flex;
     cursor: pointer;
-    background: #2c2b2b;
+    background: rgb(4 35 66);
     transition: .2s ease-in-out;
 }
 
 .sec:hover {
-    background: #3a3939;
+    background: rgb(5, 49, 92);
 }
 
 #icons {
@@ -115,7 +116,7 @@ body {
 
 .social-icons {
     width: 100%;
-    background: #171717;
+    background: #373333;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -132,12 +133,12 @@ body {
 }
 
 #social:hover {
-    color: #9a9898;
+    color: #dcdcdc;
 }
 
 .icon-link {
-    color: #fff;
-    font-size: 19.4px;
+    color: #ffffff;
+    font-size: 19.9px;
     cursor: pointer;
 }
 
@@ -148,15 +149,15 @@ body {
 }
 
 .person {
-    width: 400px;
-    height: 490px;
+    width: 393px;
+    height: 520px;
 }
 
 .para-bio {
-    width: 585px;
-    font-size: 14.5px;
+    width: 610px;
+    font-size: 14.3px;
     font-weight: 400;
-    color: #000;
+    color: #2e2e2e;
     letter-spacing: 0.6px;
     margin-bottom: 18px;
 }
@@ -165,7 +166,7 @@ body {
     font-size: 50px;
     color: #000;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .paras {
@@ -174,4 +175,102 @@ body {
 
 .about-bio {
     margin-left: 30px;
+}
+
+.line {
+    border: 1px solid #ccc8c8;
+}
+
+.shade {
+    position: absolute;
+    background: #050e2ac2;
+    width: 100%;
+    bottom: 0;
+    height: 200px;
+    padding: 22px 35px;
+}
+
+.bio-img {
+    position: relative;
+    width: 393px;
+    height: 520px;
+}
+
+.name-shade {
+    font-size: 42px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.pop {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 4px;
+}
+
+.main2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+.academics {
+    font-size: 33px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.cont {
+    display: grid;
+    grid-gap: 19px;
+    margin-top: 30px;
+}
+
+.boxx1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.years1 {
+    font-size: 16.6px;
+    color: #fff;
+    background: rgb(8, 90, 144);
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0px;
+}
+
+.years2 {
+    font-size: 16.6px;
+    color: #fff;
+    background: rgb(5, 61, 99);
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0px;
+}
+
+.name-acad {
+    font-size: 22px;
+    color: #323131;
+    font-weight: 500;
+}
+
+.des-acad {
+    font-size: 13px;
+    color: #000;
+    width: 280px;
+    margin-top: 6px;
+}
+
+.about-acad {
+    margin-left: 18px;
+}
+
+.lin {
+    border: 1px solid #e5e5e5;
 }
