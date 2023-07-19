@@ -30,7 +30,7 @@
         const app = firebase.initializeApp(firebaseConfig);
         const db = firebase.firestore(app);
 
-        const DS = db.collection("Books");
+        const DS = db.collection("Doctoral-Students");
         let temp = [];
 
         const fetchData = async ()=>{
@@ -38,7 +38,7 @@
             querySnapShot.forEach((doc)=>{
                 temp.push(doc.data());
             })
-            console.log(temp[0]);
+            console.log(temp);
         }
         fetchData();
 
