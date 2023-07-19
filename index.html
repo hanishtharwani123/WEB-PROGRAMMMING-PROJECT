@@ -12,7 +12,71 @@
 </head>
 
 <body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAtNRFhmgMcoVZxoTQxwk3m4MDO7bWK_Yc",
+            authDomain: "web-programing-project.firebaseapp.com",
+            projectId: "web-programing-project",
+            storageBucket: "web-programing-project.appspot.com",
+            messagingSenderId: "836737192007",
+            appId: "1:836737192007:web:c5b354a45afb034ff22162",
+            measurementId: "G-FQ10LP655P"
+        };
+
+        // Initialize Firebase      
+        const app = firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore(app);
+
+        const DS = db.collection("Doctoral-Students");
+        let temp = [];
+
+        const fetchData = async ()=>{
+            let querySnapShot = await DS.get();
+            querySnapShot.forEach((doc)=>{
+                temp.push(doc.data());
+            })
+            console.log(temp);
+        }
+        fetchData();
+
+    </script>
     <div class="page">
+
+      
+        <div class="popUpContainer" onclick="removePopUp()" id="popUp">
+            <div class="research" id="RS">
+                <p class="title">Research Summary</p>
+                <hr/>
+                <div class="main">
+                    <p class="content">Deriving knowledge from huge is a great challenge today. Many new mathematical modeling tools such as fuzzy set, rough set and soft set are emerging to the thrust of the real world task. Development of these techniques and tools and its popularity are studied under different domains like knowledge discovery in database, computational intelligence, knowledge engineering, granular computing etc. The basic idea of rough set is based upon the approximation of sets by lower and the upper approximation. Here, these approximations are based on equivalence relation. However, the requirement of equivalence relation is a restrictive condition that may limit the application of the rough set model. Therefore, the basic notion of rough set is generalized in many ways. For instance, the equivalence relation is generalized to binary relations, neighborhood systems, coverings, Boolean algebras. Further, the indiscernibility relation is generalized to almost indiscernibility relation with the introduction of fuzzy proximity relation. It further extended to intuitionistic fuzzy proximity relation and the concept of rough set on fuzzy approximation spaces and rough set on intuitionistic fuzzy approximation space is studied. In addition, rough set is hybridized with formal concept analysis to study various real life applications.
+        
+                    Further rough set is generalized to rough set on two universal sets with generalized approximation spaces. Further study in the same direction is carried out. We have defined topological characterization of rough set on two universal sets. Also, we establish necessary and sufficient type theorems and show how the results of Busse can be derived from them. Measures of uncertainty and rough equality of sets on two universal sets are also studied. Further rough set on two universal sets is generalized to intuitionistic fuzzy rough set on two universal sets and its properties that are important in the context of knowledge representation is studied. Also, rough computing is hybridized with Bayesian classification to study missing associations of attribute values. In addition to this, application of rough computing in trust management of MANET is also carried out. Further, multi-granular rough set on two universal sets is defined and its various properties are studied.</p>
+                    <div class="intrests">
+                        <p class="title">Interests</p>
+                        <hr/>
+                        <div class="intrest">
+                            <p>Computational Intelligence</p>
+                            <p>Knowledge Representation</p>
+                            <p>Data Mining</p>
+                            <p>Rough Computing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-Rep-Lab">
+                    <div class="info">
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
         <div class="sidebar">
             <div class="profile">
                 <img src="images/profile-img.jpg" class="profile-img">
@@ -30,7 +94,7 @@
                 <div class="sec">
                     <i class="fa-solid fa-book" id="icons"></i>
                     <hr class="line-break">
-                    <span class="name-sec">Reasearch</span>
+                    <span class="name-sec" onclick="research()">Research</span>
                 </div>
                 <div class="sec">
                     <i class="fa-solid fa-pen-to-square" id="icons"></i>
@@ -393,13 +457,33 @@
                         </div>
                     </div>
 
+                    </div>
+
+
                 </div>
-
-
             </div>
         </div>
+        
     </div>
-    </div>
+
+
+
+    <script>
+        function research(){
+            console.log('hii')
+            let res = document.getElementById('RS')
+            res.style.visibility = 'visible'
+            let popUp = document.getElementById('popUp')
+            popUp.style.visibility = 'visible'
+        }
+        function removePopUp(){
+            let popUp = document.getElementById('popUp')
+            popUp.style.visibility = 'hidden'
+            let res = document.getElementById('RS')
+            res.style.visibility = 'hidden'
+
+        }
+    </script>
 </body>
 
 </html>
