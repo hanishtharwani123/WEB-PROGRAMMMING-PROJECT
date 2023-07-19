@@ -390,3 +390,78 @@ label:hover {
     grid-gap: 20px;
     margin-top: 39px;
 }
+
+
+/* Research section css */
+.popUpContainer{
+    position:fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    background-color: #0000006b;
+    visibility: hidden;
+}
+
+.popUpContainer .research{
+    position: fixed;
+    left: 30%;
+    width: 70vw;
+    height: 100vh;
+    background-color:white;
+    padding: 4%;
+    display:flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    visibility: hidden;
+
+}
+.research .title{
+    padding-top: 4%;
+    font-size: 45px;
+    width: 90%;
+    font-weight: 200;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.popUpContainer .research .main{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0%;
+    margin-top: 2%;
+}
+.popUpContainer .research .main .content{
+    width: 65%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    word-spacing:normal;
+    text-overflow: ellipsis;
+    text-align:justify;
+}
+.popUpContainer .research .main .intrests{
+    height: fit-content;
+    width: 30%;
+    margin-left: 5%;
+}
+.popUpContainer .research .main .intrests .title{
+    font-size: 23px;
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+    color: #474444;
+}
+.popUpContainer .research .main .intrests .intrest p{
+    width: 95%;
+    padding: 2%;
+    font-size: 15px;
+    margin-top: 4%;
+    margin-left: 2.5%;
+    box-shadow: #323131;
+    border-top: none;
+    border-left: 4px solid rgb(8, 90, 144);
+    border-right: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-bottom: none;
+}
