@@ -177,6 +177,71 @@ reas_btn.addEventListener("click", () => {
   });
 });
 
+const firebaseConfig = {
+    apiKey: "AIzaSyAtNRFhmgMcoVZxoTQxwk3m4MDO7bWK_Yc",
+    authDomain: "web-programing-project.firebaseapp.com",
+    projectId: "web-programing-project",
+    storageBucket: "web-programing-project.appspot.com",
+    messagingSenderId: "836737192007",
+    appId: "1:836737192007:web:c5b354a45afb034ff22162",
+    measurementId: "G-FQ10LP655P"
+};
+
+// Initialize Firebase      
+const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore(app);
+let ISBN = null;
+
+const DS = db.collection("Doctoral-Students");
+let temp = [];
+
+const fetchData = async ()=>{
+    let querySnapShot = await DS.get();
+    querySnapShot.forEach((doc)=>{
+        temp.push(doc.data());
+    })
+    console.log(temp);
+}
+
+fetchData();
+function viewPopUp(val){
+    ISBN = val;
+    console.log('hii')
+    let doc = document.getElementById('pu')
+    doc.style.visibility = 'visible';
+}
+document.getElementById('name').addEventListener('focus', function() {
+    let doc = document.getElementById('pu')
+    doc.style.visibility = 'visible';
+});
+function submitOrder(){
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let num = document.getElementById('num').value;
+    if(name =='' || email == '' || num == ''){
+        alert("Fill all columns before placing order!!")
+    }
+    else{
+        const newOrder = {
+            name: name,
+            email: email,
+            num:num,
+            ISBN:ISBN
+            // Add any other properties as needed
+          };
+      
+          // Add the user data to the "users" collection
+          db.collection("bookings")
+            .add(newOrder)
+            .then((docRef) => {
+              console.log("Document written with ID: ", docRef.id);
+            })
+            .catch((error) => {
+              console.error("Error adding document: ", error);
+            });
+    }
+}
+
 const reas1_btn = document.getElementById("reas1");
 reas1_btn.addEventListener("click", () => {
   let popup_box = document.createElement("div");
@@ -197,69 +262,15 @@ reas1_btn.addEventListener("click", () => {
                                 <p class="ab">ISBN: 978-3-030-75854-7; Springer International Publishing AG,
                                     Switzerland, USA; 2022; Editors: D. P. Acharjya, Anirban Mitra and Noor Zaman.</p>
                             </div>
+                            <button onclick="viewPopUp('978-3-030-75854-7')" class="btn">Order now<button>
                         </div>
                         <div class="lab1">
-                            <img src="images/DLDA.png" alt="" class="fac">
+                            <img src="images/SAIS.png" alt="" class="fac">
                             <div class="about-fac">
-                                <p class="para-fac">Deep Learning in Data Analytics - Recent Techniques, Practices and
-                                    Applications</p>
-                                <p class="ab">ISBN: 978-3-030-75854-7; Springer International Publishing AG,
-                                    Switzerland, USA; 2022; Editors: D. P. Acharjya, Anirban Mitra and Noor Zaman.</p>
+                                <p class="para-fac">Smart and Intelligent Systems</p>
+                                <p class="ab">ISBN: 978-981-16-2108-6; Springer International Publishing AG, Switzerland, USA; 2022; Editors: Subhojit Dawn, Kedar Nath Das, Rammohan Mallipeddi and D. P. Acharjya.</p>
                             </div>
-                        </div>
-                        <div class="lab1">
-                            <img src="images/DLDA.png" alt="" class="fac">
-                            <div class="about-fac">
-                                <p class="para-fac">Deep Learning in Data Analytics - Recent Techniques, Practices and
-                                    Applications</p>
-                                <p class="ab">ISBN: 978-3-030-75854-7; Springer International Publishing AG,
-                                    Switzerland, USA; 2022; Editors: D. P. Acharjya, Anirban Mitra and Noor Zaman.</p>
-                            </div>
-                        </div>
-                        <div class="lab1">
-                            <img src="images/DLDA.png" alt="" class="fac">
-                            <div class="about-fac">
-                                <p class="para-fac">Deep Learning in Data Analytics - Recent Techniques, Practices and
-                                    Applications</p>
-                                <p class="ab">ISBN: 978-3-030-75854-7; Springer International Publishing AG,
-                                    Switzerland, USA; 2022; Editors: D. P. Acharjya, Anirban Mitra and Noor Zaman.</p>
-                            </div>
-                        </div>
-                        <div class="lab1">
-                            <img src="images/DLDA.png" alt="" class="fac">
-                            <div class="about-fac">
-                                <p class="para-fac">Deep Learning in Data Analytics - Recent Techniques, Practices and
-                                    Applications</p>
-                                <p class="ab">ISBN: 978-3-030-75854-7; Springer International Publishing AG,
-                                    Switzerland, USA; 2022; Editors: D. P. Acharjya, Anirban Mitra and Noor Zaman.</p>
-                            </div>
-                        </div>
-                        <div class="lab1">
-                            <img src="images/DLDA.png" alt="" class="fac">
-                            <div class="about-fac">
-                                <p class="para-fac">Deep Learning in Data Analytics - Recent Techniques, Practices and
-                                    Applications</p>
-                                <p class="ab">ISBN: 978-3-030-75854-7; Springer International Publishing AG,
-                                    Switzerland, USA; 2022; Editors: D. P. Acharjya, Anirban Mitra and Noor Zaman.</p>
-                            </div>
-                        </div>
-                        <div class="lab1">
-                            <img src="images/DLDA.png" alt="" class="fac">
-                            <div class="about-fac">
-                                <p class="para-fac">Deep Learning in Data Analytics - Recent Techniques, Practices and
-                                    Applications</p>
-                                <p class="ab">ISBN: 978-3-030-75854-7; Springer International Publishing AG,
-                                    Switzerland, USA; 2022; Editors: D. P. Acharjya, Anirban Mitra and Noor Zaman.</p>
-                            </div>
-                        </div>
-                        <div class="lab1">
-                            <img src="images/DLDA.png" alt="" class="fac">
-                            <div class="about-fac">
-                                <p class="para-fac">Deep Learning in Data Analytics - Recent Techniques, Practices and
-                                    Applications</p>
-                                <p class="ab">ISBN: 978-3-030-75854-7; Springer International Publishing AG,
-                                    Switzerland, USA; 2022; Editors: D. P. Acharjya, Anirban Mitra and Noor Zaman.</p>
-                            </div>
+                            <button onclick="viewPopUp('978-981-16-2108-6')" class="btn">Order now<button>
                         </div>
                     </div>
                 </div>
