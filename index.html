@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <i class="fa-solid fa-bars" id="bar"></i>
     <div class="page">
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
+            <i class="fa-solid fa-xmark" id="cancel_side"></i>
             <div class="profile">
                 <img src="images/profile-img.jpg" class="profile-img">
             </div>
@@ -27,37 +32,37 @@
                     <hr class="line-break">
                     <span class="name-sec">About Me</span>
                 </div>
-                <div class="sec">
+                <div class="sec" id="reas">
                     <i class="fa-solid fa-book" id="icons"></i>
                     <hr class="line-break">
                     <span class="name-sec">Reasearch</span>
                 </div>
-                <div class="sec">
+                <div class="sec" id="reas5">
                     <i class="fa-solid fa-pen-to-square" id="icons"></i>
                     <hr class="line-break">
                     <span class="name-sec">Publications</span>
                 </div>
-                <div class="sec">
+                <div class="sec" id="reas1">
                     <i class="fas fa-duotone fa-book" id="icons"></i>
                     <hr class="line-break">
                     <span class="name-sec">Books</span>
                 </div>
-                <div class="sec">
+                <div class="sec" id="reas2">
                     <i class="fa-solid fa-chalkboard" id="icons"></i>
                     <hr class="line-break">
                     <span class="name-sec">Teaching</span>
                 </div>
-                <div class="sec">
+                <div class="sec" id="reas3">
                     <i class="fa-solid fa-image" id="icons"></i>
                     <hr class="line-break">
                     <span class="name-sec">Gallery</span>
                 </div>
-                <div class="sec">
+                <div class="sec" id="reas4">
                     <i class="fa-solid fa-address-book" id="icons"></i>
                     <hr class="line-break">
                     <span class="name-sec">Contact & Meet Me</span>
                 </div>
-                <div class="sec">
+                <div class="sec" onclick="window.location.href='resume.pdf'">
                     <i class="fa-solid fa-download" id="icons"></i>
                     <hr class="line-break">
                     <span class="name-sec">Download CV</span>
@@ -397,17 +402,10 @@
 
 
             </div>
-
-            <div class="popup">
-                <div class="overlay">
-                    <div class="content">
-
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
