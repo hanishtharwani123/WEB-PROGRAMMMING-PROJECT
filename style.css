@@ -770,7 +770,7 @@ label:hover {
     #bar {
         display: block;
         margin-top: -28px;
-        position: relative;
+        position: absolute;
         top: 44px;
         left: 16px;
     }
@@ -823,7 +823,6 @@ label:hover {
     #bar {
         display: block;
         margin-top: -28px;
-        position: relative;
         top: 44px;
         left: 16px;
     }
@@ -890,12 +889,12 @@ label:hover {
     .sidebar {
         display: none;
         z-index: 999;
+        width: 216px;
     }
 
     #bar {
         display: block;
         margin-top: -28px;
-        position: relative;
         top: 44px;
         left: 16px;
     }
@@ -945,8 +944,8 @@ label:hover {
 
     #cancel_side {
         color: #fff;
-        font-size: 32px;
-        margin-left: 221px;
+        font-size: 27px;
+        margin-left: 179px;
         display: block;
     }
 }
@@ -980,12 +979,12 @@ label:hover {
     .sidebar {
         display: none;
         z-index: 999;
+        width: 216px;
     }
 
     #bar {
         display: block;
         margin-top: -28px;
-        position: relative;
         top: 44px;
         left: 16px;
     }
@@ -1106,8 +1105,8 @@ label:hover {
 
     #cancel_side {
         color: #fff;
-        font-size: 32px;
-        margin-left: 221px;
+        font-size: 27px;
+        margin-left: 179px;
         display: block;
     }
 }
@@ -1141,12 +1140,12 @@ label:hover {
     .sidebar {
         display: none;
         z-index: 999;
+        width: 216px;
     }
 
     #bar {
         display: block;
         margin-top: -28px;
-        position: relative;
         top: 44px;
         left: 16px;
     }
@@ -1267,8 +1266,603 @@ label:hover {
 
     #cancel_side {
         color: #fff;
-        font-size: 32px;
-        margin-left: 221px;
+        font-size: 27px;
+        margin-left: 179px;
         display: block;
+    }
+}
+
+@media screen and (max-width:1101px) {
+    .popup .content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        width: 856px;
+        background: #ffffff;
+    }
+
+    .lab1 {
+        width: 684px;
+        height: 220px;
+        background: rgb(245, 242, 242);
+        display: flex;
+        box-shadow: 0 0 10px #aeadad;
+    }
+
+    .gall {
+        font-size: 12px;
+        color: #fff;
+        font-weight: lighter;
+        width: 306px;
+    }
+
+    .gallerys {
+        font-size: 47px;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 68px;
+    }
+
+    #one2 {
+        background: rgb(3, 6, 33);
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 70px 55px;
+    }
+
+    #grid-img {
+        width: 254px;
+        height: 188px;
+        box-shadow: 0 0 10px #888686;
+    }
+}
+
+@media screen and (max-width:944px) {
+    .popup .content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        width: 713px;
+        background: #ffffff;
+    }
+
+    .lab1 {
+        width: 450px;
+        height: 180px;
+        background: rgb(245, 242, 242);
+        display: flex;
+        box-shadow: 0 0 10px #aeadad;
+    }
+
+    .paras1 {
+        font-size: 14px;
+        color: #383737;
+        font-weight: 400;
+        margin-top: 25px;
+    }
+
+    .research-nme {
+        font-size: 37px;
+        font-weight: lighter;
+        color: #4d4c4c;
+        margin-bottom: 10px;
+    }
+
+    .para-fac {
+        font-size: 11px;
+        color: #000;
+        text-align: left;
+        font-weight: lighter;
+    }
+
+    .ab {
+        font-size: 10px;
+        color: #000000;
+        text-align: left;
+        margin-top: 13px;
+    }
+
+    .fac {
+        height: 180px;
+        width: 172px;
+    }
+
+    .crd {
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    #link-btn {
+        color: rgb(0, 34, 255);
+        font-size: 17px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .int {
+        font-size: 11px;
+        width: 318px;
+        margin-left: 15px;
+    }
+
+    .cord {
+        width: 490px;
+        height: 200px;
+        box-shadow: 0 0 10px #c2c0c0;
+        padding: 25px 28px;
+        border-radius: 2px;
+    }
+
+    .prs {
+        font-size: 12px;
+        color: #373333;
+        font-weight: 400;
+        width: 251px;
+    }
+
+    .cc {
+        font-size: 11px;
+        color: #373333;
+        font-weight: 400;
+    }
+
+    .pr {
+        margin-top: 40px;
+        width: 500px;
+        margin-top: 66px;
+        font-size: 12px;
+    }
+
+    .tea {
+        width: 175px;
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+
+    .pr1 {
+        margin-top: 40px;
+        width: 500px;
+        margin-top: 60px;
+        font-size: 12px;
+        margin-left: 40px;
+    }
+
+    .gall {
+        font-size: 12px;
+        color: #fff;
+        font-weight: lighter;
+        width: 306px;
+    }
+
+    .gallerys {
+        font-size: 47px;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 68px;
+    }
+
+    #one2 {
+        background: rgb(3, 6, 33);
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 70px 55px;
+    }
+
+    #grid-img {
+        width: 254px;
+        height: 188px;
+        box-shadow: 0 0 10px #888686;
+    }
+
+    .pras {
+        font-size: 14px;
+        color: #000;
+        margin-top: 30px;
+    }
+
+    #dsa {
+        width: 358px;
+        text-align: left;
+        font-size: 11px;
+    }
+
+    #fsa {
+        font-size: 17px;
+    }
+
+    #boox1 {
+        justify-content: space-evenly;
+    }
+
+    #yeerr1 {
+        font-size: 14.6px;
+        width: 70px;
+    }
+
+    #yeerr2 {
+        font-size: 14.6px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .popup .content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        width: 477px;
+        background: #ffffff;
+    }
+
+    .lab1 {
+        width: 450px;
+        height: 180px;
+        background: rgb(245, 242, 242);
+        display: flex;
+        box-shadow: 0 0 10px #aeadad;
+    }
+
+    .paras1 {
+        font-size: 14px;
+        color: #383737;
+        font-weight: 400;
+        margin-top: 25px;
+    }
+
+    .research-nme {
+        font-size: 37px;
+        font-weight: lighter;
+        color: #4d4c4c;
+        margin-bottom: 10px;
+    }
+
+    .para-fac {
+        font-size: 11px;
+        color: #000;
+        text-align: left;
+        font-weight: lighter;
+    }
+
+    .ab {
+        font-size: 10px;
+        color: #000000;
+        text-align: left;
+        margin-top: 13px;
+    }
+
+    .fac {
+        height: 180px;
+        width: 172px;
+    }
+
+    .crd {
+        font-size: 11px;
+        font-weight: lighter;
+    }
+
+    #link-btn {
+        color: rgb(0, 34, 255);
+        font-size: 17px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .int {
+        font-size: 10px;
+        width: 318px;
+        margin-left: 15px;
+    }
+
+    .cord {
+        width: 295px;
+        height: 240px;
+        box-shadow: 0 0 10px #c2c0c0;
+        padding: 25px 28px;
+        border-radius: 2px;
+    }
+
+    .pet {
+        font-size: 12.4px;
+        font-weight: 500;
+        margin-top: 14px;
+    }
+
+    .jour {
+        background: rgb(255, 179, 0);
+        color: #fff;
+        font-size: 10px;
+        padding: 10px 4px;
+        border-radius: 4px;
+        width: 82px;
+    }
+
+    .prs {
+        font-size: 10px;
+        color: #373333;
+        font-weight: 400;
+        width: 141px;
+    }
+
+    .cc {
+        font-size: 10px;
+        color: #373333;
+        font-weight: 400;
+    }
+
+    .pr {
+        margin-top: 40px;
+        width: 500px;
+        margin-top: 28px;
+        font-size: 9px;
+    }
+
+    .tea {
+        width: 175px;
+        margin-top: 30px;
+        margin-left: 70px;
+        height: 108px;
+    }
+
+    .pr1 {
+        margin-top: 40px;
+        width: 500px;
+        margin-top: 60px;
+        font-size: 10px;
+        margin-left: 40px;
+    }
+
+    .tea1 {
+        width: 178px;
+        margin-top: 30px;
+        height: 129px;
+    }
+
+    .gall {
+        font-size: 11px;
+        color: #fff;
+        font-weight: lighter;
+        width: 306px;
+    }
+
+    .gallerys {
+        font-size: 40px;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+
+    #one2 {
+        background: rgb(3, 6, 33);
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 70px 55px;
+    }
+
+    #grid-img {
+        width: 244px;
+        height: 172px;
+        box-shadow: 0 0 10px #888686;
+    }
+
+    #one1 {
+        background: rgb(4 9 44);
+        display: grid;
+        justify-content: space-around;
+    }
+
+    .pras {
+        font-size: 11px;
+        color: #000;
+        margin-top: 30px;
+    }
+
+    #dsa {
+        width: 221px;
+        text-align: left;
+        font-size: 10px;
+    }
+
+    #fsa {
+        font-size: 14px;
+    }
+
+    #boox1 {
+        justify-content: space-evenly;
+    }
+
+    #yeerr1 {
+        font-size: 11.6px;
+        width: 56px;
+    }
+
+    #yeerr2 {
+        font-size: 11.6px;
+        width: 56px;
+    }
+
+    #bok {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width:515px) {
+    .popup .content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        width: 342px;
+        background: #ffffff;
+    }
+
+    .lab1 {
+        width: 332px;
+        height: 147px;
+        background: rgb(245, 242, 242);
+        display: flex;
+        box-shadow: 0 0 10px #aeadad;
+    }
+
+    .paras1 {
+        font-size: 9px;
+        color: #383737;
+        font-weight: 400;
+        margin-top: 25px;
+    }
+
+    .research-nme {
+        font-size: 24px;
+        font-weight: lighter;
+        color: #4d4c4c;
+        margin-bottom: 10px;
+    }
+
+    .para-fac {
+        font-size: 9px;
+        color: #000;
+        text-align: left;
+        font-weight: lighter;
+    }
+
+    .ab {
+        font-size: 8px;
+        color: #000000;
+        text-align: left;
+        margin-top: 13px;
+    }
+
+    .fac {
+        height: 147px;
+        width: 172px;
+    }
+
+    .about-fac {
+        padding: 12px 28px;
+    }
+
+    .nmee {
+        font-size: 12px;
+        color: #000;
+        font-weight: bold;
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    .prs {
+        font-size: 10px;
+        color: #373333;
+        font-weight: 400;
+        width: 141px;
+    }
+
+    .contct {
+        display: none;
+    }
+
+    .cc {
+        font-size: 10px;
+        color: #373333;
+        font-weight: 400;
+    }
+
+    .pr {
+        margin-top: 40px;
+        width: 500px;
+        margin-top: 28px;
+        font-size: 9px;
+    }
+
+    .tea {
+        width: 175px;
+        margin-top: 30px;
+        margin-left: 30px;
+        height: 108px;
+        display: none;
+    }
+
+    .pr1 {
+        margin-top: 40px;
+        width: 447px;
+        margin-top: 60px;
+        font-size: 8px;
+    }
+
+    .tea1 {
+        width: 104px;
+        margin-top: 30px;
+        height: 102px;
+        display: none;
+    }
+
+    .gall {
+        font-size: 11px;
+        color: #fff;
+        font-weight: lighter;
+        width: 306px;
+    }
+
+    .gallerys {
+        font-size: 40px;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+
+    #one2 {
+        background: rgb(3, 6, 33);
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 70px 55px;
+    }
+
+    #grid-img {
+        width: 231px;
+        height: 157px;
+        box-shadow: 0 0 10px #888686;
+        margin-left: -48px;
+
+    }
+
+    #one1 {
+        background: rgb(4 9 44);
+        display: grid;
+        justify-content: space-around;
+    }
+
+    .pras {
+        font-size: 9px;
+        color: #000;
+        margin-top: 30px;
+    }
+
+    #dsa {
+        width: 221px;
+        text-align: left;
+        font-size: 10px;
+    }
+
+    #fsa {
+        font-size: 14px;
+    }
+
+    #boox1 {
+        justify-content: space-evenly;
+    }
+
+    #yeerr1 {
+        font-size: 11.6px;
+        width: 56px;
+    }
+
+    #yeerr2 {
+        font-size: 11.6px;
+        width: 56px;
+    }
+
+    #bok {
+        font-size: 27px;
     }
 }

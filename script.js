@@ -300,10 +300,10 @@ reas2_btn.addEventListener("click", () => {
           <p class="nme-mam">Currrent Teaching</p>
           <hr class="line20">
           <div class="cont18">
-              <div class="boxx1">
-                  <div class="year">
-                      <p class="years1">Present</p>
-                      <p class="years2">2012</p>
+              <div class="boxx1" id="boox1">
+                  <div class="year" id="yeer1">
+                      <p class="years1" id="yeerr1">Present</p>
+                      <p class="years2" id="yeerr2">2012</p>
                   </div>
                   <div class="about-acad">
                       <p class="name-acad" id="fsa">Theory of Computation</p>
@@ -313,10 +313,10 @@ reas2_btn.addEventListener("click", () => {
                       </p>
                   </div>
               </div>
-              <div class="boxx1">
-                  <div class="year">
-                      <p class="years1">Present</p>
-                      <p class="years2">2012</p>
+              <div class="boxx1" id="boox1">
+                  <div class="year" id="yeer1">
+                      <p class="years1" id="yeerr1">Present</p>
+                      <p class="years2" id="yeerr2">2012</p>
                   </div>
                   <div class="about-acad">
                       <p class="name-acad" id="fsa">Data Structure and Algorithms</p>
@@ -325,10 +325,10 @@ reas2_btn.addEventListener("click", () => {
                           better performance is the prime objective of this subject.</p>
                   </div>
               </div>
-              <div class="boxx1">
-                  <div class="year">
-                      <p class="years1">Present</p>
-                      <p class="years2">2020</p>
+              <div class="boxx1" id="boox1">
+                  <div class="year" id="yeer1">
+                      <p class="years1" id="yeerr1">Present</p>
+                      <p class="years2" id="yeerr2">2020</p>
                   </div>
                   <div class="about-acad">
                       <p class="name-acad" id="fsa">Computational Intelligence</p>
@@ -348,10 +348,10 @@ reas2_btn.addEventListener("click", () => {
           <p class="nme-mam">Teaching History</p>
           <hr class="line20">
           <div class="cont18">
-              <div class="boxx1">
-                  <div class="year">
-                      <p class="years1">Present</p>
-                      <p class="years2">2012</p>
+              <div class="boxx1" id="boox1">
+                  <div class="year" id="yeer1">
+                      <p class="years1" id="yeerr1">Present</p>
+                      <p class="years2" id="yeerr2">2012</p>
                   </div>
                   <div class="about-acad">
                       <p class="name-acad" id="fsa">Theory of Computation</p>
@@ -361,10 +361,10 @@ reas2_btn.addEventListener("click", () => {
                       </p>
                   </div>
               </div>
-              <div class="boxx1">
-                  <div class="year">
-                      <p class="years1">Present</p>
-                      <p class="years2">2012</p>
+              <div class="boxx1" id="boox1">
+                  <div class="year" id="yeer1">
+                      <p class="years1" id="yeerr1">Present</p>
+                      <p class="years2" id="yeerr2">2012</p>
                   </div>
                   <div class="about-acad">
                       <p class="name-acad" id="fsa">Data Structure and Algorithms</p>
@@ -373,10 +373,10 @@ reas2_btn.addEventListener("click", () => {
                           better performance is the prime objective of this subject.</p>
                   </div>
               </div>
-              <div class="boxx1">
-                  <div class="year">
-                      <p class="years1">Present</p>
-                      <p class="years2">2020</p>
+              <div class="boxx1" id="boox1">
+                  <div class="year" id="yeer1">
+                      <p class="years1" id="yeerr1">Present</p>
+                      <p class="years2" id="yeerr2">2020</p>
                   </div>
                   <div class="about-acad">
                       <p class="name-acad" id="fsa">Computational Intelligence</p>
@@ -391,10 +391,10 @@ reas2_btn.addEventListener("click", () => {
                   </div>
               </div>
 
-              <div class="boxx1">
-                  <div class="year">
-                      <p class="years1">Present</p>
-                      <p class="years2">2020</p>
+              <div class="boxx1" id="boox1">
+                  <div class="year" id="yeer1">
+                      <p class="years1" id="yeerr1">Present</p>
+                      <p class="years2" id="yeerr2">2020</p>
                   </div>
                   <div class="about-acad">
                       <p class="name-acad" id="fsa">Computational Intelligence</p>
@@ -409,10 +409,10 @@ reas2_btn.addEventListener("click", () => {
                   </div>
               </div>
 
-              <div class="boxx1">
-                  <div class="year">
-                      <p class="years1">Present</p>
-                      <p class="years2">2020</p>
+              <div class="boxx1" id="boox1">
+                  <div class="year" id="yeer1">
+                      <p class="years1" id="yeerr1">Present</p>
+                      <p class="years2" id="yeerr2">2020</p>
                   </div>
                   <div class="about-acad">
                       <p class="name-acad" id="fsa">Computational Intelligence</p>
@@ -427,10 +427,10 @@ reas2_btn.addEventListener("click", () => {
                   </div>
               </div>
 
-              <div class="boxx1">
-                  <div class="year">
-                      <p class="years1">Present</p>
-                      <p class="years2">2020</p>
+              <div class="boxx1" id="boox1">
+                  <div class="year" id="yeer1">
+                      <p class="years1" id="yeerr1">Present</p>
+                      <p class="years2" id="yeerr2">2020</p>
                   </div>
                   <div class="about-acad">
                       <p class="name-acad" id="fsa">Computational Intelligence</p>
