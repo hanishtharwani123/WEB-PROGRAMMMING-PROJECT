@@ -15,6 +15,28 @@
 </head>
 
 <body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script>
+        function hide(){
+            let doc = document.getElementById('pu')
+            doc.style.visibility = 'hidden'
+        }
+    </script>
+        <div class="paymentpopUp" id="pu">
+            <div class="window">
+                <input type="text" placeholder="Name" id="name" class="inp"/>
+                <input type="email" placeholder="Email" id="email" class="inp"/>
+                <input type="number" placeholder="Phone-number" id="num" class="inp"/>
+                <!-- <button onclick="hide()">X</button> -->
+                <div class="btns">
+                    <input type="button" onclick="submitOrder()" value="Order" class="order"/>
+                    <input type="button" onclick="hide()" value="Close" class="order"/>
+                </div>
+                
+            </div>
+        </div>
     <i class="fa-solid fa-bars" id="bar"></i>
     <div class="page">
         <div class="sidebar" id="sidebar">
