@@ -218,6 +218,7 @@ function submitOrder(){
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let num = document.getElementById('num').value;
+    let TID = document.getElementById('TID').value;
     if(name =='' || email == '' || num == ''){
         alert("Fill all columns before placing order!!")
     }
@@ -227,7 +228,8 @@ function submitOrder(){
             email: email,
             num:num,
             ISBN:ISBN,
-            paymentVerification:false
+            paymentVerification:false,
+            transactionID:TID
             // Add any other properties as needed
           };
       
