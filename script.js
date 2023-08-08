@@ -226,7 +226,8 @@ function submitOrder(){
             name: name,
             email: email,
             num:num,
-            ISBN:ISBN
+            ISBN:ISBN,
+            paymentVerification:false
             // Add any other properties as needed
           };
       
